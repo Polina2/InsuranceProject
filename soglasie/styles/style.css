@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+/*    padding-left: 20px;*/
+}
+
+@font-face {
+    font-family: 'Gotham_Pro_medium';
+    src: url("../fonts/ofont.ru_Gotham_Pro_medium.ttf");
+}
+
+@font-face {
+    font-family: 'Gotham_Pro_regular';
+    src: url("../fonts/ofont.ru_Gotham_Pro_regular.ttf");
+}
+
+body{
+    background-color: #FFE4D6;
+    font-family: 'Gotham_Pro_regular', sans-serif;
+    color: #000000;
+}
+
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    padding: 0px 0;
+    background-color: #FF6501;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.profile {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile img{
+    vertical-align: bottom;
+}
+
+.profile-text{
+    font-size: 25px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.menu {
+    margin-left: 110px;
+    margin-right: 180px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 95px;
+}
+
+.menu-item a {
+    font-size: 25px;
+    line-height: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid white;
+}
+
+.products {
+    padding: 20px 0;
+    position: relative;
+}
+
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    gap: 90px 24px;
+    margin-top: 110px;
+}
+
+.products-item-title{
+    font-family: 'Gotham_Pro_medium', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.products-item {
+    background-color: white;
+    color: #000000;
+    height: 400px;
+}
+
+.products-item-details {
+    padding: 0 25px;
+}
+
+.products-create {
+    background-color: #FF6501;
+    color: #000000;
+    height: 210px;
+    margin-top: 40px;
+}
+
+.products-create-button {
+    padding: 20px;
+    margin-left: 25px;
+}
+.products-create-button img{
+    padding: 0 10px 0 0;
+}
+
+
+.button {
+    background-color: white;
+    /*border-radius:60px;*/
+    width: 178px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gotham_Pro_regular', sans-serif;
+    color: #5243F4;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.orange-button {
+    background-color: #FF6501;
+    color: #000000;
+}
+
+
