@@ -1,0 +1,69 @@
+{% load static %}
+
+   <form action="{% url 'products:create_product' %}" method="post">
+                                    {% csrf_token %}
+                                    
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.LOBID.id_for_label }}">Линия бизнеса</label>
+                                                {{ form.LOBID }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.name.id_for_label }}">Название продукта</label>
+                                                {{ form.name }}
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="{{ form.name_for_str_metafield.id_for_label }}">
+                                                Название доп. строкового поля (необязательно)
+                                            </label>
+                                            {{ form.name_for_str_metafield }}
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="{{ form.str_value.id_for_label }}">Значение доп. строкового поля</label>
+                                            {{ form.str_value }}
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.name_for_numeric_metafield.id_for_label }}">
+                                                    Название доп.числового поля(необязательно)
+                                                </label>
+                                                {{ form.name_for_numeric_metafield}}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.numeric_value.id_for_label }}">Значение доп.числового поля</label>
+                                                {{ form.numeric_value }}
+                                            </div>
+                                        </div>
+       
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.name_for_date_metafield.id_for_label }}">
+                                                    Название доп. поля для дат(необязательно)
+                                                </label>
+                                                {{ form.name_for_date_metafield}}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.begin.id_for_label }}">Дата начала</label>
+                                                {{ form.begin }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="{{ form.end.id_for_label }}">Дата окончания</label>
+                                                {{ form.end }}
+                                            </div>
+                                        </div>
+                                    <div class="form-group mt-4 mb-0">
+                                        <input class="btn btn-primary btn-block" type="submit" value="Создать продукт">
+                                    </div>
+                                </form>
